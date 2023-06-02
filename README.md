@@ -1,7 +1,7 @@
 # Review Classification: SVM vs. Random Forests   
 
 ### Project Overview   
-    The model predicts either the review_sentiment (positive, neutral, negative).     
+    The model predicts the review_sentiment (positive, neutral, negative).     
 
     For text vectoization, TF-IDF vectorizer is used for Sentiments vectorization.   
 
