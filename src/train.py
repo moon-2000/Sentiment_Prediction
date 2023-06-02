@@ -93,11 +93,13 @@ def run(fold, model, cross_validation):
     plt.xlabel('Predicted Values')
     plt.show()
 
+
     if cross_validation == "True":
-        plt.savefig('../outputs/cm_with_cross.png', dpi=300, bbox_inches='tight') 
+        name = f"../outputs/cm_with_cross_with{model}_fold_{fold}.png"
     else: 
-        plt.savefig('../outputs/cm_without_cross.png', dpi=300, bbox_inches='tight')
-    
+        name = f"../outputs/cm_without_cross_with{model}.png"
+    plt.savefig(name, dpi=300, bbox_inches='tight') 
+
     evaluation_metrics = calculate_metrics(y_test, preds)
     for metric, value in evaluation_metrics.items():
         print(f"{metric}: {value}")
