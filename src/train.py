@@ -82,23 +82,21 @@ def run(fold, model, cross_validation):
     cm = confusion_matrix(y_test, preds)
     # Creating a dataframe for a array-formatted Confusion matrix,so it will be easy for plotting.
     cm_df = pd.DataFrame(cm,
-                    index = ['POSITIVE','NEUTRAL','NEGATIVE'], 
-                    columns = ['POSITIVE','NEUTRAL','NEGATIVE'])
+                    index = ['Negative','Neutral','Positive'], 
+                    columns = ['Negative','Neutral','Positive'])
     
     #Plotting the confusion matrix
-    plt.figure(figsize=(5,4))
     sns.heatmap(cm_df, annot=True)
     plt.title('Confusion Matrix')
-    plt.ylabel('Actal Values')
+    plt.ylabel('Actual Values')
     plt.xlabel('Predicted Values')
-    plt.show()
-
-
+    
     if cross_validation == "True":
-        name = f"../outputs/cm_with_cross_with{model}_fold_{fold}.png"
+        name = f"../outputs/cm_with_cross_with_{model}_fold_{fold}.png"
     else: 
-        name = f"../outputs/cm_without_cross_with{model}.png"
+        name = f"../outputs/cm_without_cross_with_{model}.jpg"
     plt.savefig(name, dpi=300, bbox_inches='tight') 
+    plt.show()
 
     evaluation_metrics = calculate_metrics(y_test, preds)
     for metric, value in evaluation_metrics.items():
@@ -106,6 +104,7 @@ def run(fold, model, cross_validation):
     
     output_directory = "../models"
     os.makedirs(output_directory, exist_ok=True)
+
     # save the trained model
     model_filename = f"{model}_{fold}_CV_{cross_validation}.bin"
     joblib.dump(clf, os.path.join(config.MODEL_OUTPUT, model_filename))
