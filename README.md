@@ -1,4 +1,4 @@
-# Review Classification: SVM vs. Random Forests   
+# Sentiment Prediction with SVM   
 
 ### Project Overview   
     The model predicts the review_sentiment (positive, neutral, negative).     
