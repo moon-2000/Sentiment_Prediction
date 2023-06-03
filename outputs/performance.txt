@@ -1,0 +1,99 @@
+
+## without cross_validation
+--model svm_lin_C01   --cross_validation   "False"
+        accuracy: 0.7848904267589388
+        precision: 0.7446147937086145  
+        recall: 0.7848904267589388     
+        f1_score: 0.7510616136577877   
+        specificity: 0.8721532007726859
+
+--model svm_lin_C1   --cross_validation    "False"
+        accuracy: 0.8440023068050749
+        precision: 0.8427801307000602
+        recall: 0.8440023068050749
+        f1_score: 0.8401878255297056    
+        specificity: 0.9092953574388858
+
+--model svm_lin_C10   --cross_validation   "False"
+        accuracy: 0.8578431372549019
+        precision: 0.8603022691036556  
+        recall: 0.8578431372549019     
+        f1_score: 0.85891684677754     
+        specificity: 0.9221817439742604 
+
+--model svm_lin_C100   --cross_validation  "False"
+        accuracy: 0.856401384083045
+        precision: 0.8625703952790251  
+        recall: 0.856401384083045      
+        f1_score: 0.8585785775636116   
+        specificity: 0.9228922018438811
+
+--model svm_sig_C01   --cross_validation   "False" 
+        accuracy: 0.777681660899654
+        precision: 0.7441721182316976
+        recall: 0.777681660899654
+        f1_score: 0.7437904537307616
+        specificity: 0.8668402577689228
+
+--model svm_sig_C1   --cross_validation    "False"
+        accuracy: 0.7903690888119954
+        precision: 0.7850375542868298  
+        recall: 0.7903690888119954     
+        f1_score: 0.784006407664097    
+        specificity: 0.8755073052821656
+
+--model svm_sig_C10   --cross_validation   "False"
+        accuracy: 0.734717416378316
+        precision: 0.7401613793931661  
+        recall: 0.734717416378316      
+        f1_score: 0.7372227626207863   
+        specificity: 0.8532934190831524
+
+--model svm_sig_C100   --cross_validation  "False"
+        accuracy: 0.7283737024221453
+        precision: 0.7406837674148986
+        recall: 0.7283737024221453   
+        f1_score: 0.733600302256608
+        specificity: 0.8528917919528453
+
+--model svm_poly_C01   --cross_validation  "False"
+        accuracy: 0.5841983852364475   
+        precision: 0.6538705697233336  
+        recall: 0.5841983852364475     
+        f1_score: 0.46401937127929566  
+        specificity: 0.6929135469442572
+
+--model svm_poly_C1   --cross_validation  "False"
+        accuracy: 0.8241061130334487
+        precision: 0.840489774162465   
+        recall: 0.8241061130334487     
+        f1_score: 0.8151268784364996   
+        specificity: 0.8772180069640124
+
+--model svm_poly_C10   --cross_validation  "False"
+        accuracy: 0.8463091118800461
+        precision: 0.8534009243739202  
+        recall: 0.8463091118800461     
+        f1_score: 0.8397391031875102   
+        specificity: 0.8971294245972782
+
+--model svm_poly_C100   --cross_validation  "False"
+        accuracy: 0.7554786620530565
+        precision: 0.8254518841471346
+        recall: 0.7554786620530565
+        f1_score: 0.7575743042855944
+        specificity: 0.8681167752140283
+
+--model svm_rbf_C10   --cross_validation  "False"
+        accuracy: 0.8961937716262975
+        precision: 0.8967813252295652  
+        recall: 0.8961937716262975     
+        f1_score: 0.8945390662750827   
+        specificity: 0.9380686464162397
+
+--model svm_rbf_C1000   --cross_validation  "False"
+        accuracy: 0.8956170703575548
+        precision: 0.8962719055141375  
+        recall: 0.8956170703575548     
+        f1_score: 0.8939891464286787   
+        specificity: 0.9377683461159395
