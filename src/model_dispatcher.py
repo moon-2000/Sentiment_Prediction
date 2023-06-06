@@ -12,8 +12,6 @@ models = {
     "svm_poly_C1": SVC(kernel="poly", C=1),
     "svm_poly_C10": SVC(kernel="poly", C=10),
     "svm_poly_C100": SVC(kernel="poly", C=100),
-    "svm_rbf_C10": SVC(kernel="rbf", C=10),
-    "svm_rbf_C1000": SVC(kernel="rbf", C=1000),
     "svm_sig_C01": SVC(kernel='sigmoid', C=0.1),
     "svm_sig_C1": SVC(kernel='sigmoid', C=1),
     "svm_sig_C10": SVC(kernel='sigmoid', C=10),
