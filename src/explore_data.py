@@ -6,7 +6,7 @@ import seaborn as sns
 """
 The purpose of this dataset was to perform text classification. 
 
-To achieve this, scraped reviews from Amazon products were used. 
+To achieve this, a dataset of Amazon products reviews  was obtained from Kaggle. 
 
 The dataset is composed of three classes;
     - Negative Reviews
